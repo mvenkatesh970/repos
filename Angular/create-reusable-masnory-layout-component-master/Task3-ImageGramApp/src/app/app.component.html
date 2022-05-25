@@ -1,0 +1,9 @@
+<header>
+    <h1>Imagegram App</h1>
+</header>
+<lib-masonry [gutter]="10" [totalWidth]="80" [columnWidth]="250" [noOfColumns]="4" >
+    <div *ngFor="let data of images" style="text-align: center;" >
+      <h3 >{{data.caption}}</h3>
+      <img src={{data.imageUrl}} alt="" srcset="">
+    </div>
+  </lib-masonry>

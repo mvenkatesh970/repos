@@ -1,0 +1,6 @@
+<lib-masonry [gutter]="10" [totalWidth]="80" [columnWidth]="250" [noOfColumns]="4" >
+  <div *ngFor="let data of images" class="container" >
+    <h3 >{{data.caption}}</h3>
+    <img src="https://picsum.photos/200" alt="" srcset="">
+  </div>
+</lib-masonry>
